@@ -101,8 +101,6 @@ nav {
 }
 
 .toggle {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -207,8 +205,6 @@ header {
 
   & img,
   .overlay {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -239,8 +235,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .header-bg-text {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
