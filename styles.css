@@ -73,7 +73,6 @@ nav {
     letter-spacing: 0.1em;
   }
   & a {
-    text-transform: uppercase;
     color: white;
     font-weight: 500;
     text-decoration: none;
