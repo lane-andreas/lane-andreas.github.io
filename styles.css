@@ -98,12 +98,8 @@ nav {
 }
 
 .toggle {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   font-size: calc(1rem + 0.5vw);
   font-weight: 1000;
   font-family: "Teko", sans-serif;
