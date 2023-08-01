@@ -85,6 +85,7 @@ nav {
 }
 
 .toggle {
+  pointer-events: none;
   display: none;
   height: 1em;
   transition: transform 0.3s, height 0.3s;
