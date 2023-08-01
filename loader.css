@@ -166,3 +166,20 @@
     top: 100%;
   }
 }
+
+@keyframes scrollbarGrow {
+  0%,
+  99% {
+    height: 100%;
+    overflow-y: hidden;
+  }
+  100% {
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+body,
+html {
+  animation: scrollbarGrow 3.25s forwards linear;
+}
