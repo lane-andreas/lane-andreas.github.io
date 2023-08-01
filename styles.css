@@ -15,11 +15,6 @@
 
 button,
 a {
-  font-weight: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  border: inherit;
-  background-color: inherit;
   color: inherit;
   text-decoration: inherit;
 }
