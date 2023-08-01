@@ -47,7 +47,6 @@ body {
 }
 
 nav {
-  pointer-events: all;
   font-size: calc(1rem + 0.5vw);
   font-weight: 1000;
   font-family: "Teko", sans-serif;
@@ -208,6 +207,13 @@ header {
 
   & img,
   .overlay {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     width: 100vw;
     height: 100vh;
     width: 100lvw;
@@ -233,6 +239,13 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .header-bg-text {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: white;
     font-family: "Switzer", sans-serif;
 
