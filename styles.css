@@ -95,29 +95,17 @@ nav {
   text-decoration: underline;
   -webkit-text-decoration-color: inherit;
   text-decoration-color: inherit;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .toggle {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   font-size: calc(1rem + 0.5vw);
   font-weight: 1000;
   font-family: "Teko", sans-serif;
   background-color: transparent;
   border: none;
-  user-select: none;
   display: none;
   height: 1em;
-  -webkit-transition: height 0.3s, -webkit-transform 0.3s;
-  transition: height 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, height 0.3s;
-  transition: transform 0.3s, height 0.3s;
-  transition: transform 0.3s, height 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, padding 0.5s;
 }
 
 .nav-links,
@@ -136,10 +124,13 @@ nav {
 .brand:hover {
   letter-spacing: 0.1em;
 }
-
+.toggle-box {
+  display: none;
+}
 @media (width < 700px) {
   .toggle {
     display: block;
+    cursor: pointer;
   }
   .nav-links {
     -webkit-box-orient: vertical;
@@ -147,23 +138,13 @@ nav {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-
     -webkit-box-align: center;
-
     -ms-flex-align: center;
-
     align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-transition: padding 0.5s;
-    -o-transition: padding 0.5s;
-    transition: padding 0.5s;
+    transition: height 0.3s, padding 0.5s, scale 0.3s;
   }
 
   .nav-link {
@@ -172,20 +153,14 @@ nav {
     scale: 0;
   }
 
-  .nav-links:hover {
-    padding-bottom: 0;
-  }
-
-  .nav-links:hover .nav-link {
+  .toggle-box:checked ~ .nav-link,
+  .toggle-box:checked ~ .toggle {
     height: 1em !important;
     scale: 1 !important;
     padding: 0 1em 2.5em !important;
   }
-  .nav-links:hover .toggle {
-    -webkit-transform: translateX(20em);
-    -ms-transform: translateX(20em);
-    transform: translateX(20em);
-    height: 0;
+  .toggle-box:checked ~ .nav-link:last-of-type {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -209,11 +184,6 @@ header {
 
   & img,
   .overlay {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     width: 100vw;
     height: 100vh;
     width: 100lvw;
@@ -239,11 +209,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .header-bg-text {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     color: white;
     font-family: "Switzer", sans-serif;
 
