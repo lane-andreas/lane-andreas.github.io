@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@1&f[]=teko@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scroll-ani.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">| FEW PINTS |</div>
+      <div class="nav-links">
+        <a href="">blog </a><a href="">selections</a><a href="">cart</a>
+      </div>
+    </nav>
+    <header class="min-size">
+      <img src="pictures\header-bg.jpg" alt="" class="header-bg" />
+      <div class="overlay"></div>
+      <div class="header-bg-text">
+        <div class="text-wrap"></div>
+        <div class="text-wrap"></div>
+        <p>Crafting Quality Brews</p>
+        <p class="header-sub">since 1989</p>
+      </div>
+      <div class="share-links">
+        <a href=""
+          ><iconify-icon icon="ph:instagram-logo-duotone"></iconify-icon
+        ></a>
+        <a href=""
+          ><iconify-icon icon="ph:facebook-logo-duotone"></iconify-icon
+        ></a>
+        <a href=""
+          ><iconify-icon icon="ph:snapchat-logo-duotone"></iconify-icon
+        ></a>
+        <input type="text" value="https://www.fewpints.com/" id="fewpints" />
+        <button onclick="fewpintsCopy()">
+          <iconify-icon icon="ph:link-duotone"></iconify-icon>
+        </button>
+      </div>
+    </header>
+    <section class="min-size">
+      <h1 class="bg-title">OUR BREWS<br /><span>don't compare</span></h1>
+      <p class="about">
+        Our beer comes in an incredible range of styles, each with its unique
+        characteristics and flavors. Whether you're a seasoned beer enthusiast
+        or just starting your beer journey, we've got you covered. From lagers
+        and ales to stouts and IPAs, we'll guide you through the vast array of
+        beer styles, providing tasting notes and food pairing suggestions for a
+        delightful experience.
+      </p>
+      <div class="testimonial-grid">
+        <div class="area">
+          <span>``</span>
+          <div class="person">
+            <img src="pictures\jack.jpg" alt="" /><lead>Jack S.</lead>
+          </div>
+
+          <p>
+            Awesome beer website! Love the spotlights and pairing suggestions.
+            Cheers to a great resource!
+          </p>
+        </div>
+        <div class="area">
+          <span>``</span>
+          <div class="person">
+            <img src="pictures\emily.jpg" alt="" /><lead>Emily P.</lead>
+          </div>
+
+          <p>
+            As an avid homebrewer, this beer website is invaluable! The
+            comprehensive tips improved my brewing, while diverse beer styles
+            expanded my palate. Regular event updates and a vibrant community
+            make it my go-to resource. Thanks!
+          </p>
+        </div>
+        <div class="area">
+          <span>``</span>
+          <div class="person">
+            <img src="pictures\micheal.jpg" alt="" /><lead>Michael R.</lead>
+          </div>
+
+          <p>
+            A beer lover's paradise! The rich history and inspiring brewery
+            spotlights deepen my appreciation. Unforgettable beer and food
+            pairings elevate my culinary experiences. Connecting with
+            enthusiasts worldwide is fantastic.
+          </p>
+        </div>
+        <div class="area">
+          <span>``</span>
+          <div class="person">
+            <img src="pictures\sarah.jpg" alt="" /><lead>Sarah H.</lead>
+          </div>
+
+          <p>
+            Perfect for craft beer newbies. Explored styles and events. Boosted
+            confidence. Thanks!
+          </p>
+        </div>
+        <div class="area">
+          <span>``</span>
+          <div class="person">
+            <img src="pictures\mark.jpg" alt="" /><lead>Mark W.</lead>
+          </div>
+
+          <p>
+            This website is a beer lover's paradise. From history to spotlights,
+            it's a treasure trove! Pairing suggestions elevate culinary
+            experiences. The forums connect me with enthusiasts worldwide,
+            enhancing my passion. Kudos to the team for curating this delightful
+            hub!
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="min-size">
+      <div class="shop">
+        <a href="" class="selection">
+          <div class="beer-name">Amber Enigma Ale</div>
+          <div class="beer-name">Amber Enigma Ale</div>
+          <img src="beer\anton-jansson-avzVnM-757Q-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1054 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Hoppy Wanderlust</div>
+          <div class="beer-name">Hoppy Wanderlust</div>
+          <img src="beer\alexander-cifuentes-qkW55UbeWdI-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>849 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Midnight Eclipse Stout</div>
+          <div class="beer-name">Midnight Eclipse Stout</div>
+          <img
+            src="beer\devon-janse-van-rensburg-iHJNaOVrLMM-unsplash.jpg"
+            alt=""
+          />
+          <div class="review">
+            <p>572 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Citrus Serenade IPA</div>
+          <div class="beer-name">Citrus Serenade IPA</div>
+          <img src="beer\inigo-de-la-maza-psaehuU61NQ-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1297 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Velvet Thunder Porter</div>
+          <div class="beer-name">Velvet Thunder Porter</div>
+          <img src="beer\israel-albornoz-3o-rcD2dBxU-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>271 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Tropical Haze Hefeweizen</div>
+          <div class="beer-name">Tropical Haze Hefeweizen</div>
+          <img src="beer\israel-albornoz-CiSJ9pKxX9k-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>810 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Galactic Nebula Lager</div>
+          <div class="beer-name">Galactic Nebula Lager</div>
+          <img src="beer\jon-koop-F44TpNcNe0U-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>129 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Raspberry Bliss Saison</div>
+          <div class="beer-name">Raspberry Bliss Saison</div>
+          <img src="beer\monica-di-loxley-SbuxFS55Q1M-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1783 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Oak Barrel Aria</div>
+          <div class="beer-name">Oak Barrel Aria</div>
+          <img src="beer\nighthawk-shoots-Du1ZhqP-AvE-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>205 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Mocha Java Stout</div>
+          <div class="beer-name">Mocha Java Stout</div>
+          <img src="beer\pablo-rebolledo-Xlp-k2EWCrU-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1390 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Summer Solstice Wheat</div>
+          <div class="beer-name">Summer Solstice Wheat</div>
+          <img
+            src="beer\yannis-papanastasopoulos-8RRPagVz9_Y-unsplash.jpg"
+            alt=""
+          />
+          <div class="review">
+            <p>557 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Amber Enigma Ale</div>
+          <div class="beer-name">Amber Enigma Ale</div>
+          <img src="beer\anton-jansson-avzVnM-757Q-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1054 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Hoppy Wanderlust</div>
+          <div class="beer-name">Hoppy Wanderlust</div>
+          <img src="beer\alexander-cifuentes-qkW55UbeWdI-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>849 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Midnight Eclipse Stout</div>
+          <div class="beer-name">Midnight Eclipse Stout</div>
+          <img
+            src="beer\devon-janse-van-rensburg-iHJNaOVrLMM-unsplash.jpg"
+            alt=""
+          />
+          <div class="review">
+            <p>572 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Citrus Serenade IPA</div>
+          <div class="beer-name">Citrus Serenade IPA</div>
+          <img src="beer\inigo-de-la-maza-psaehuU61NQ-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1297 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Velvet Thunder Porter</div>
+          <div class="beer-name">Velvet Thunder Porter</div>
+          <img src="beer\israel-albornoz-3o-rcD2dBxU-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>271 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Tropical Haze Hefeweizen</div>
+          <div class="beer-name">Tropical Haze Hefeweizen</div>
+          <img src="beer\israel-albornoz-CiSJ9pKxX9k-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>810 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Galactic Nebula Lager</div>
+          <div class="beer-name">Galactic Nebula Lager</div>
+          <img src="beer\jon-koop-F44TpNcNe0U-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>129 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Raspberry Bliss Saison</div>
+          <div class="beer-name">Raspberry Bliss Saison</div>
+          <img src="beer\monica-di-loxley-SbuxFS55Q1M-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1783 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Oak Barrel Aria</div>
+          <div class="beer-name">Oak Barrel Aria</div>
+          <img src="beer\nighthawk-shoots-Du1ZhqP-AvE-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>205 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Mocha Java Stout</div>
+          <div class="beer-name">Mocha Java Stout</div>
+          <img src="beer\pablo-rebolledo-Xlp-k2EWCrU-unsplash.jpg" alt="" />
+          <div class="review">
+            <p>1390 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+        <a class="selection">
+          <div class="beer-name">Summer Solstice Wheat</div>
+          <div class="beer-name">Summer Solstice Wheat</div>
+          <img
+            src="beer\yannis-papanastasopoulos-8RRPagVz9_Y-unsplash.jpg"
+            alt=""
+          />
+          <div class="review">
+            <p>557 Reviews</p>
+            ★★★★☆
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="min-size">
+      <div class="blog">
+        <div class="blog-post">
+          <div class="like-number">567</div>
+          <iconify-icon
+            class="like"
+            icon="material-symbols:favorite"
+          ></iconify-icon>
+          <div class="username">
+            @<span class="username-tag">beerlover67</span>
+          </div>
+          <p class="blog-text">
+            Man, I enjoy this beer. How long can I survive just drinking this
+            beer?
+          </p>
+        </div>
+        <div class="blog-post">
+          <div class="like-number">2</div>
+          <iconify-icon
+            class="not-like"
+            icon="material-symbols:favorite-outline"
+          ></iconify-icon>
+
+          <div class="username">
+            @<span class="username-tag">bigman22</span>
+          </div>
+          <p class="blog-text">big cups, fill em up</p>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

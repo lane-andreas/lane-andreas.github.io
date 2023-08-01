@@ -1,0 +1,38 @@
+@keyframes delay {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes color {
+  0% {
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  10%,
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 0.5em 1.5em 0.5em;
+    background-color: white;
+  }
+}
+
+@keyframes color-a {
+  10%,
+  100% {
+    color: black;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
