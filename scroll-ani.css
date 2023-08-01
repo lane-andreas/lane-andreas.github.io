@@ -1,9 +1,41 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes delay {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
 @keyframes delay {
   0% {
     top: 0;
   }
   100% {
     top: 100%;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: white;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  10%,
+  100% {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 0 0.5em 0;
+    background-color: white;
   }
 }
 
@@ -15,10 +47,18 @@
   }
   10%,
   100% {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     color: black;
     padding: 0 0.5em 0;
     background-color: white;
+  }
+}
+
+@-webkit-keyframes color-a {
+  10%,
+  100% {
+    color: black;
   }
 }
 
@@ -29,11 +69,24 @@
   }
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
