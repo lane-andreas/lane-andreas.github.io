@@ -43,7 +43,7 @@ nav {
 
   font-weight: 1000;
   font-family: "Teko", sans-serif;
-  color: white;
+
   position: fixed;
   top: 0;
   width: 100%;
@@ -65,7 +65,7 @@ nav {
   text-decoration: underline;
   text-decoration-color: rgba(0, 0, 0, 0);
   transition: 0.5s;
-  color: white;
+
   font-weight: 500;
   -webkit-animation: color-a 1s linear infinite;
   animation: color-a 1s linear infinite;
@@ -87,7 +87,7 @@ nav {
 .toggle {
   display: none;
   height: 1em;
-  transition: 0.3s;
+  transition: transform 0.3s, height 0.3s;
 }
 
 .nav-links,
@@ -110,7 +110,7 @@ nav {
   .nav-links {
     flex-direction: column;
     gap: 0;
-    transition: 0.5s;
+    transition: transform0.5s;
 
     align-items: center;
     justify-content: flex-start;
