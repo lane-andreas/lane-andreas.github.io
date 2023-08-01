@@ -35,7 +35,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 0%);
+  background: rgb(171, 145, 1);
 }
 
 nav {
