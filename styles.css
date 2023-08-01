@@ -110,10 +110,11 @@ nav {
   .nav-links {
     flex-direction: column;
     gap: 0;
-    transition: transform0.5s;
+    transition: transform 0.5s;
 
     align-items: center;
     justify-content: flex-start;
+    transition: padding 0.5s;
   }
 
   .nav-link {
@@ -131,7 +132,8 @@ nav {
     scale: 1 !important;
     padding: 0 1em 2.5em !important;
   }
-  .nav-links:hover .toggle {
+  .nav-links:hover .toggle,
+  .nav-links:active .toggle {
     transform: translateX(20em);
     height: 0;
   }
@@ -151,6 +153,7 @@ header {
 
   & img,
   .overlay {
+    transition: 0.5s;
     width: 100vw;
     height: 100vh;
     width: 100lvw;
