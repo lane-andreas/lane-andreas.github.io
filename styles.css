@@ -146,23 +146,28 @@ nav {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    transition: height 0.3s, padding 0.5s, scale 0.3s;
+    transition: height 0.3s, padding 0.3s scale 0.3s;
   }
 
   .nav-link {
-    padding: 0;
     height: 0;
     scale: 0;
+    display: flex;
+    align-items: center;
   }
 
   .toggle-box:checked ~ .nav-link,
   .toggle-box:checked ~ .toggle {
-    height: 1em !important;
+    height: 3em !important;
     scale: 1 !important;
-    padding: 0 1em 2.5em !important;
+    padding: 0 1em 0;
   }
-  .toggle-box:checked ~ .nav-link:last-of-type {
-    padding-bottom: 0 !important;
+
+  .toggle-box:checked ~ .toggle span {
+    display: none;
+  }
+  .toggle-box:checked ~ .toggle::after {
+    content: "CLOSE";
   }
 }
 
