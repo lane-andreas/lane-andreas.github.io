@@ -23,12 +23,3 @@ window.addEventListener(
   },
   false
 );
-
-var myhref = document.getElementById("nav-links-pages");
-// Get a reference to "myfield".
-var myfield = document.getElementById("nav-links");
-// Attach an event listener to "myhref", which gets notifier when "myhref" is clicked.
-myhref.addEventListener("click", function () {
-  // "myhref" is click. So, uncheck "myfield"
-  myfield.checked = false;
-});
